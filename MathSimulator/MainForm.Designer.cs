@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.b_Sum = new System.Windows.Forms.Button();
             this.b_Diff = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.b_Mul = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.b_Div = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // b_Sum
@@ -63,17 +63,18 @@
             this.b_Diff.UseVisualStyleBackColor = false;
             this.b_Diff.Click += new System.EventHandler(this.b_Diff_Click);
             // 
-            // button2
+            // b_Mul
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(275, 760);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(279, 47);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Множення чисел";
-            this.button2.UseVisualStyleBackColor = false;
+            this.b_Mul.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.b_Mul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_Mul.Font = new System.Drawing.Font("Monotype Corsiva", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_Mul.Location = new System.Drawing.Point(275, 760);
+            this.b_Mul.Name = "b_Mul";
+            this.b_Mul.Size = new System.Drawing.Size(279, 47);
+            this.b_Mul.TabIndex = 2;
+            this.b_Mul.Text = "Множення чисел";
+            this.b_Mul.UseVisualStyleBackColor = false;
+            this.b_Mul.Click += new System.EventHandler(this.b_Mul_Click);
             // 
             // button3
             // 
@@ -99,17 +100,18 @@
             this.button4.Text = "Порівняння чисел";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // b_Div
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Monotype Corsiva", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(522, 654);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(279, 47);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Ділення чисел";
-            this.button5.UseVisualStyleBackColor = false;
+            this.b_Div.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.b_Div.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_Div.Font = new System.Drawing.Font("Monotype Corsiva", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_Div.Location = new System.Drawing.Point(522, 654);
+            this.b_Div.Name = "b_Div";
+            this.b_Div.Size = new System.Drawing.Size(279, 47);
+            this.b_Div.TabIndex = 3;
+            this.b_Div.Text = "Ділення чисел";
+            this.b_Div.UseVisualStyleBackColor = false;
+            this.b_Div.Click += new System.EventHandler(this.b_Div_Click);
             // 
             // MainForm
             // 
@@ -120,8 +122,8 @@
             this.ClientSize = new System.Drawing.Size(1326, 1055);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.b_Div);
+            this.Controls.Add(this.b_Mul);
             this.Controls.Add(this.b_Diff);
             this.Controls.Add(this.b_Sum);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -141,10 +143,10 @@
 
         private System.Windows.Forms.Button b_Sum;
         private System.Windows.Forms.Button b_Diff;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button b_Mul;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button b_Div;
     }
 }
 

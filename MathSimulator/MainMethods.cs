@@ -22,5 +22,19 @@ namespace MathSimulator
             return c;
         }
 
+        public int Multiplication(int a, int b)
+        {
+            int c;
+            c = a * b;
+            return c;
+        }
+
+        public int Division(int a, int b)
+        {
+            int c;
+            c = a / b;
+            return c;
+        }
+
     }
 }

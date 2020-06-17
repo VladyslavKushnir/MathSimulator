@@ -1,6 +1,6 @@
 ﻿namespace MathSimulator
 {
-    partial class Difference
+    partial class Multiplication
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Difference));
-            this.diff_string = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Multiplication));
+            this.mul_string = new System.Windows.Forms.Label();
             this.result = new System.Windows.Forms.TextBox();
             this.check_button = new System.Windows.Forms.Button();
             this.InformationOutput = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // diff_string
+            // mul_string
             // 
-            this.diff_string.AutoSize = true;
-            this.diff_string.BackColor = System.Drawing.Color.Transparent;
-            this.diff_string.Font = new System.Drawing.Font("Monotype Corsiva", 100.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.diff_string.ForeColor = System.Drawing.Color.Black;
-            this.diff_string.Location = new System.Drawing.Point(77, 231);
-            this.diff_string.Name = "diff_string";
-            this.diff_string.Size = new System.Drawing.Size(469, 202);
-            this.diff_string.TabIndex = 1;
-            this.diff_string.Text = "25+17";
+            this.mul_string.AutoSize = true;
+            this.mul_string.BackColor = System.Drawing.Color.Transparent;
+            this.mul_string.Font = new System.Drawing.Font("Monotype Corsiva", 100.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.mul_string.ForeColor = System.Drawing.Color.Black;
+            this.mul_string.Location = new System.Drawing.Point(143, 230);
+            this.mul_string.Name = "mul_string";
+            this.mul_string.Size = new System.Drawing.Size(469, 202);
+            this.mul_string.TabIndex = 1;
+            this.mul_string.Text = "25+17";
             // 
             // result
             // 
             this.result.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.result.Font = new System.Drawing.Font("Monotype Corsiva", 100.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.result.ForeColor = System.Drawing.Color.Black;
-            this.result.Location = new System.Drawing.Point(691, 228);
+            this.result.Location = new System.Drawing.Point(640, 230);
             this.result.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.result.Name = "result";
             this.result.Size = new System.Drawing.Size(277, 188);
@@ -95,11 +95,11 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(115, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(825, 202);
+            this.label2.Size = new System.Drawing.Size(775, 202);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Віднімання";
+            this.label2.Text = "Множення";
             // 
-            // Difference
+            // Multiplication
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -110,13 +110,13 @@
             this.Controls.Add(this.InformationOutput);
             this.Controls.Add(this.check_button);
             this.Controls.Add(this.result);
-            this.Controls.Add(this.diff_string);
+            this.Controls.Add(this.mul_string);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Difference";
-            this.Text = "Віднімання чисел";
+            this.Name = "Multiplication";
+            this.Text = "Множення чисел";
             this.Load += new System.EventHandler(this.AdditionLoad);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -124,7 +124,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label diff_string;
+        private System.Windows.Forms.Label mul_string;
         private System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Button check_button;
         private System.Windows.Forms.Label InformationOutput;

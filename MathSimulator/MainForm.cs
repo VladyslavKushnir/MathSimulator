@@ -12,9 +12,10 @@ namespace MathSimulator
 {
     public partial class MainForm : Form
     {
-        Addition add = new Addition();
-        Difference dif = new Difference();
-       
+        readonly Addition add = new Addition();
+        readonly Difference dif = new Difference();
+        readonly Multiplication mul = new Multiplication();
+        readonly Division div = new Division();
         public MainForm()
         {
             InitializeComponent();
@@ -38,6 +39,16 @@ namespace MathSimulator
         private void b_Diff_Click(object sender, EventArgs e)
         {
             dif.ShowDialog();
+        }
+
+        private void b_Mul_Click(object sender, EventArgs e)
+        {
+            mul.ShowDialog();
+        }
+
+        private void b_Div_Click(object sender, EventArgs e)
+        {
+            div.ShowDialog();
         }
     }
 }

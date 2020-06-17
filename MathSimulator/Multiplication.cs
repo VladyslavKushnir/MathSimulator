@@ -3,20 +3,20 @@ using System.Windows.Forms;
 
 namespace MathSimulator
 {   
-    public partial class Difference : Form
+    public partial class Multiplication : Form
     {
         // об'єкт класу з основними методами
         readonly MainMethods method = new MainMethods();
         // об'єкт класу рандом для випадкових чисел
         readonly Random rnd = new Random();
-        // a - зменшуване
-        // b - від'ємне
-        // res - різниця
+        // a - перший доданок
+        // b - другий доданок
+        // res - сума
         int a, b, res;
         /// <summary>
         /// Ініціалізація компонентів
         /// </summary>
-        public Difference()
+        public Multiplication()
         {
             InitializeComponent();
         }
@@ -64,14 +64,14 @@ namespace MathSimulator
             }
         }
         /// <summary>
-        /// Генерація чисел та розрахунок різниці
+        /// Генерація чисел та розрахунок добутку
         /// </summary>
         public void Generation()
         {
-            a = rnd.Next(50, 101);
-            b = rnd.Next(0, 49);
-            diff_string.Text = a.ToString() + "-" + b.ToString() + "=";
-            res = method.Difference(a,b);
+            a = rnd.Next(0, 10);
+            b = rnd.Next(0, 10);
+            mul_string.Text = a.ToString() + "⋅" + b.ToString() + "=";
+            res = method.Multiplication(a,b);
         }
     }
 }
