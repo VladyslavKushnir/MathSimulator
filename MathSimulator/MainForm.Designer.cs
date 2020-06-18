@@ -33,7 +33,7 @@
             this.b_Diff = new System.Windows.Forms.Button();
             this.b_Mul = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.b_Comp = new System.Windows.Forms.Button();
             this.b_Div = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -88,17 +88,18 @@
             this.button3.Text = "Склад числа";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // b_Comp
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Monotype Corsiva", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(572, 707);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(279, 47);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Порівняння чисел";
-            this.button4.UseVisualStyleBackColor = false;
+            this.b_Comp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.b_Comp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_Comp.Font = new System.Drawing.Font("Monotype Corsiva", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_Comp.Location = new System.Drawing.Point(572, 707);
+            this.b_Comp.Name = "b_Comp";
+            this.b_Comp.Size = new System.Drawing.Size(279, 47);
+            this.b_Comp.TabIndex = 4;
+            this.b_Comp.Text = "Порівняння чисел";
+            this.b_Comp.UseVisualStyleBackColor = false;
+            this.b_Comp.Click += new System.EventHandler(this.b_Comp_Click);
             // 
             // b_Div
             // 
@@ -121,7 +122,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1326, 1055);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.b_Comp);
             this.Controls.Add(this.b_Div);
             this.Controls.Add(this.b_Mul);
             this.Controls.Add(this.b_Diff);
@@ -145,7 +146,7 @@
         private System.Windows.Forms.Button b_Diff;
         private System.Windows.Forms.Button b_Mul;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button b_Comp;
         private System.Windows.Forms.Button b_Div;
     }
 }

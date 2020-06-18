@@ -36,5 +36,14 @@ namespace MathSimulator
             return c;
         }
 
+        public int Comparsion(int a, int b)
+        {
+            int c;
+            if (a > b) { c = 0; }
+            else if (a < b) { c = 1; }
+            else { c = 2; };
+            return c;
+        }
+
     }
 }

@@ -16,6 +16,7 @@ namespace MathSimulator
         readonly Difference dif = new Difference();
         readonly Multiplication mul = new Multiplication();
         readonly Division div = new Division();
+        readonly Comparison comp = new Comparison();
         public MainForm()
         {
             InitializeComponent();
@@ -49,6 +50,11 @@ namespace MathSimulator
         private void b_Div_Click(object sender, EventArgs e)
         {
             div.ShowDialog();
+        }
+
+        private void b_Comp_Click(object sender, EventArgs e)
+        {
+            comp.ShowDialog();
         }
     }
 }
