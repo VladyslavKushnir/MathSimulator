@@ -32,7 +32,7 @@
             this.b_Sum = new System.Windows.Forms.Button();
             this.b_Diff = new System.Windows.Forms.Button();
             this.b_Mul = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.b_Compos = new System.Windows.Forms.Button();
             this.b_Comp = new System.Windows.Forms.Button();
             this.b_Div = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -76,17 +76,18 @@
             this.b_Mul.UseVisualStyleBackColor = false;
             this.b_Mul.Click += new System.EventHandler(this.b_Mul_Click);
             // 
-            // button3
+            // b_Compos
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Monotype Corsiva", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(622, 760);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(279, 47);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Склад числа";
-            this.button3.UseVisualStyleBackColor = false;
+            this.b_Compos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.b_Compos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_Compos.Font = new System.Drawing.Font("Monotype Corsiva", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_Compos.Location = new System.Drawing.Point(622, 760);
+            this.b_Compos.Name = "b_Compos";
+            this.b_Compos.Size = new System.Drawing.Size(279, 47);
+            this.b_Compos.TabIndex = 5;
+            this.b_Compos.Text = "Склад числа";
+            this.b_Compos.UseVisualStyleBackColor = false;
+            this.b_Compos.Click += new System.EventHandler(this.b_Compos_Click);
             // 
             // b_Comp
             // 
@@ -121,7 +122,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1326, 1055);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.b_Compos);
             this.Controls.Add(this.b_Comp);
             this.Controls.Add(this.b_Div);
             this.Controls.Add(this.b_Mul);
@@ -145,7 +146,7 @@
         private System.Windows.Forms.Button b_Sum;
         private System.Windows.Forms.Button b_Diff;
         private System.Windows.Forms.Button b_Mul;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button b_Compos;
         private System.Windows.Forms.Button b_Comp;
         private System.Windows.Forms.Button b_Div;
     }

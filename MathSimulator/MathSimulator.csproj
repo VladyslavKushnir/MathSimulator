@@ -52,6 +52,12 @@
     <Compile Include="Comparison.Designer.cs">
       <DependentUpon>Comparison.cs</DependentUpon>
     </Compile>
+    <Compile Include="Composition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Composition.Designer.cs">
+      <DependentUpon>Composition.cs</DependentUpon>
+    </Compile>
     <Compile Include="Division.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Comparison.resx">
       <DependentUpon>Comparison.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Composition.resx">
+      <DependentUpon>Composition.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Division.resx">
       <DependentUpon>Division.cs</DependentUpon>
