@@ -25,7 +25,7 @@ namespace MathSimulator
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void AdditionLoad(object sender, EventArgs e)
+        private void DivisionLoad(object sender, EventArgs e)
         {
             Generation();
             InformationOutput.Text = "";

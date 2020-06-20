@@ -9,9 +9,9 @@ namespace MathSimulator
         readonly MainMethods method = new MainMethods();
         // об'єкт класу рандом для випадкових чисел
         readonly Random rnd = new Random();
-        // a - перший доданок
-        // b - другий доданок
-        // res - сума
+        // a - перший множник
+        // b - другий множник
+        // res - добуток
         int a, b, res;
         /// <summary>
         /// Ініціалізація компонентів
@@ -25,7 +25,7 @@ namespace MathSimulator
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void AdditionLoad(object sender, EventArgs e)
+        private void MultiplicationLoad(object sender, EventArgs e)
         {
             Generation();
             InformationOutput.Text = "";

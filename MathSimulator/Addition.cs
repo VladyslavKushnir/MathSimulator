@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace MathSimulator
 {   
+    /// <summary>
+    /// Клас - Addition - додавання чисел
+    /// </summary>
     public partial class Addition : Form
     {
         // об'єкт класу з основними методами
@@ -49,17 +53,22 @@ namespace MathSimulator
             if (result.Text != "")
             {
                 if (result.Text == res.ToString())
-                {   InformationOutput.Text = "Відповідь вірна!";
+                {
+                    InformationOutput.ForeColor = Color.FromArgb(0, 192, 0);
+                    InformationOutput.Text = "Відповідь вірна!";
                     result.Text = "";
                     Generation();
                 }
                 else 
-                {   InformationOutput.Text = "Спробуй ще раз!";
+                {   
+                    InformationOutput.ForeColor = Color.FromArgb(0, 0, 192);
+                    InformationOutput.Text = "Спробуй ще раз!";
                     result.Text = "";
                 };
             }
             else
             {
+                InformationOutput.ForeColor = Color.FromArgb(0, 0, 192);
                 InformationOutput.Text = "Заповніть поле";
             }
         }

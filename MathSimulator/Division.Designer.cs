@@ -117,7 +117,7 @@
             this.MinimizeBox = false;
             this.Name = "Division";
             this.Text = "Ділення чисел";
-            this.Load += new System.EventHandler(this.AdditionLoad);
+            this.Load += new System.EventHandler(this.DivisionLoad);
             this.ResumeLayout(false);
             this.PerformLayout();
 

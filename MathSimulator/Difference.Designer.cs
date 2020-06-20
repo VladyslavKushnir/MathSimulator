@@ -117,7 +117,7 @@
             this.MinimizeBox = false;
             this.Name = "Difference";
             this.Text = "Віднімання чисел";
-            this.Load += new System.EventHandler(this.AdditionLoad);
+            this.Load += new System.EventHandler(this.DifferenceLoad);
             this.ResumeLayout(false);
             this.PerformLayout();
 

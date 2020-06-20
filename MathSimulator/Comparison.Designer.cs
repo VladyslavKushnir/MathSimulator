@@ -150,7 +150,7 @@
             this.MinimizeBox = false;
             this.Name = "Comparison";
             this.Text = "Порівняння чисел";
-            this.Load += new System.EventHandler(this.AdditionLoad);
+            this.Load += new System.EventHandler(this.ComparisonLoad);
             ((System.ComponentModel.ISupportInitialize)(this.more)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.less)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.equally)).EndInit();

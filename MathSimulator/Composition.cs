@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace MathSimulator
@@ -9,10 +10,10 @@ namespace MathSimulator
         readonly MainMethods method = new MainMethods();
         // об'єкт класу рандом для випадкових чисел
         readonly Random rnd = new Random();
-        // a - ділене
-        // b - дільник
-        // res - частка
-        int a, b, res, num;
+        // a - десятки
+        // b - одиниці
+        // num - число
+        int a, b, num;
         /// <summary>
         /// Ініціалізація компонентів
         /// </summary>
@@ -25,7 +26,7 @@ namespace MathSimulator
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void AdditionLoad(object sender, EventArgs e)
+        private void CompositionLoad(object sender, EventArgs e)
         {
             Generation();
             InformationOutput.Text = "";
@@ -41,45 +42,12 @@ namespace MathSimulator
         {
             InformationOutput.Text = "";
         }
-
-        private void checkButton_CheckedChanged(object sender, EventArgs e)
-        {
-            /*if (checkButton.Checked)
-            {
-                if (dozens.Text != "" && units.Text != "")
-                {
-                    if (dozens.Text == a.ToString() && units.Text == b.ToString())
-                    {
-                        InformationOutput.Text = "Відповідь вірна!";
-                        UI(a, b);
-                        checkButton.Text = "Далі";
-
-                    }
-                    else
-                    {
-                        InformationOutput.Text = "Спробуй ще раз!";
-                        dozens.Text = "";
-                        units.Text = "";
-                        checkButton.Checked = true;
-                    };
-                }
-                else
-                {
-                    InformationOutput.Text = "Заповніть поля";
-                }
-            }
-            else
-            {
-                Generation();
-                dozens.Text = "";
-                units.Text = "";
-                UI_clear();
-                InformationOutput.Text = "";
-                checkButton.Text = "Перевірити";
-            }*/
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Очищення та кнопка "Далі"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Next_Click(object sender, EventArgs e)
         {
             Generation();
             dozens.Text = "";
@@ -90,13 +58,18 @@ namespace MathSimulator
             Check.Enabled = true;
 
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Кнопка перевірки результати
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Check_Click(object sender, EventArgs e)
         {
             if (dozens.Text != "" && units.Text != "")
             {
                 if (dozens.Text == a.ToString() && units.Text == b.ToString())
                 {
+                    InformationOutput.ForeColor = Color.FromArgb(0, 192, 0);
                     InformationOutput.Text = "Відповідь вірна!";
                     UI(a, b);
                     Next.Enabled = true;
@@ -106,6 +79,7 @@ namespace MathSimulator
                 }
                 else
                 {
+                    InformationOutput.ForeColor = Color.FromArgb(0, 0, 192);
                     InformationOutput.Text = "Спробуй ще раз!";
                     dozens.Text = "";
                     units.Text = "";
@@ -115,11 +89,11 @@ namespace MathSimulator
             }
             else
             {
+                InformationOutput.ForeColor = Color.FromArgb(0, 0, 192);
                 InformationOutput.Text = "Заповніть поля";
                 Next.Enabled = false;
             }
         }
-
         /// <summary>
         /// Генерація чисел та розрахунок частки
         /// </summary>
@@ -131,7 +105,11 @@ namespace MathSimulator
             b = (num % 10);
            
         }
-
+        /// <summary>
+        /// Відображення складу числа
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
         void UI(int a, int b) 
         {
             switch (a)
@@ -325,7 +303,9 @@ namespace MathSimulator
             }
 
         }
-
+        /// <summary>
+        /// Очищення
+        /// </summary>
         void UI_clear()
         {
             d1.Visible = false;
@@ -347,7 +327,5 @@ namespace MathSimulator
             u9.Visible = false;
 
         }
-
-       
     }
 }

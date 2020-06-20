@@ -1087,7 +1087,7 @@
             this.Next.TabIndex = 16;
             this.Next.Text = "Далі";
             this.Next.UseVisualStyleBackColor = false;
-            this.Next.Click += new System.EventHandler(this.button1_Click);
+            this.Next.Click += new System.EventHandler(this.Next_Click);
             // 
             // Check
             // 
@@ -1101,7 +1101,7 @@
             this.Check.TabIndex = 17;
             this.Check.Text = "Перевірити";
             this.Check.UseVisualStyleBackColor = false;
-            this.Check.Click += new System.EventHandler(this.button2_Click);
+            this.Check.Click += new System.EventHandler(this.Check_Click);
             // 
             // Composition
             // 
@@ -1132,7 +1132,7 @@
             this.MinimizeBox = false;
             this.Name = "Composition";
             this.Text = "Склад числа";
-            this.Load += new System.EventHandler(this.AdditionLoad);
+            this.Load += new System.EventHandler(this.CompositionLoad);
             this.d7.ResumeLayout(false);
             this.d6.ResumeLayout(false);
             this.d4.ResumeLayout(false);

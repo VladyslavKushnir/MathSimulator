@@ -117,7 +117,7 @@
             this.MinimizeBox = false;
             this.Name = "Multiplication";
             this.Text = "Множення чисел";
-            this.Load += new System.EventHandler(this.AdditionLoad);
+            this.Load += new System.EventHandler(this.MultiplicationLoad);
             this.ResumeLayout(false);
             this.PerformLayout();
 
